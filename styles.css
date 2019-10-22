@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
+    padding: 0px;
+    margin: 0px;
 }
 
 html, body {
@@ -15,15 +17,19 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid green;
 }
 
 .news-container {
-    padding: 20px 10px;
     width: 60%;
     max-width: 500px;
     border: 2px solid black;
+    border-radius: 10px;
 }
 
+.padding {
+    padding: 20px;
+}
 .get_started {
     color: black;
     text-align: left;
@@ -45,6 +51,8 @@ button {
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .logo {
     padding-top: 0px;
@@ -53,33 +61,44 @@ button {
 
 .line {
     background: lightgray;
-    border-bottom: 2px solid lightgray;
+    border-bottom: 2px solid gray;
 }
 
 .square {
     background: black;
-    height: 40px;
-    width: 40px;
+    min-height: 50px;
+    width: 50px;
+    align-content: center;
+    justify-self: center;
 }
 
 footer {
     background: black;
-    padding: 0 30px 40px;
+    margin: 0px;
 }
 
 footer .logo {
     height: 50px;
+    padding: 10px;
+    width: 75px;
+}
+
+.steps {
+    /* margin-bottom: 20px; */
+    padding-bottom: 20px;
 }
 
 .contact {
     color: white;
     font-size: 10px;
     color: lightgray;
+    padding: 20px;
 }
 
 .career {
     color: white;
     font-size: 13px;
+    padding: 20px;
 }
 
 li {
@@ -88,4 +107,18 @@ li {
 
 .space_between {
     justify-content: space-between;
+}
+
+.align_item {
+    align-items: flex-start;
+}
+
+.col-2 {
+    width: calc(2/12 * 100%);
+    padding-top: 0px;
+}
+
+.col-10 {
+    width: calc(10/12 * 100%);
+    padding-top: 0px;
 }
